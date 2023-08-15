@@ -1,0 +1,20 @@
+8 ESLint rules behave differently from their TSLint counterparts:
+  * @typescript-eslint/no-unused-expressions:
+    - The TSLint optional config "allow-new" is the default ESLint behavior and will no longer be ignored.
+  * @typescript-eslint/quotes:
+    - Option "jsx-double" is not supported by ESLint.
+    - Option "avoid-template" is not supported by ESLint.
+  * arrow-body-style:
+    - ESLint will throw an error if the function body is multiline yet has a one-line return on it.
+  * import/no-extraneous-dependencies:
+    - ESLint does not support whitelisting modules
+  * no-invalid-this:
+    - Functions in methods will no longer be ignored.
+  * no-underscore-dangle:
+    - Leading and trailing underscores (_) on identifiers will now be ignored.
+  * prefer-arrow/prefer-arrow-functions:
+    - ESLint does not support allowing standalone function declarations.
+    - ESLint does not support allowing named functions defined with the function keyword.
+  * prefer-template:
+    - Single concatenations will no longer be ignored.
+
